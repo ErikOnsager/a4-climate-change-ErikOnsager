@@ -8,7 +8,7 @@ intro_tab <- tabPanel(
   "Introduction",
   fluidPage(theme = bs_theme(primary = "#091F43", font_scale = NULL, bootswatch = "cerulean"),
     h1("Introduction"),
-    p("In this project, I've chosen to analyze ___ in my Shiny app to ____"),
+    p("In this project, I've chosen to analyze ___ in my Shiny app to ____"), ##############################
     h3("Who collected the data?"),
     p("The data was collected by Our World in Data, an online publication that focuses on large problems affecting the world, such as poverty, disease, and climate change."),
     h3("How was the data collected or generated?"),
@@ -19,10 +19,9 @@ intro_tab <- tabPanel(
     p("The data contains many NA values, limiting the conclusions that can be drawn from it. Because of this, I have to be aware of when assumptions are made when cleaning and analyzing the data.
         As a result of being removed from the collection of the data, I need to make sure that I don't suppress voices or exclude key information just to emphasize clarity and cleanliness in my visualizations.
         Finally, the data's country column contains more than just countries - World, Africa, and Asia are all examples of this mislabeling, something I'll have to account for in my analysis."),
-    p("Through analyzing the data, "),
+    textOutput(outputId = "calcValues")
   )
 )
-
 plot_sidebar <- sidebarPanel(
   selectInput(
     inputId = "user_category",
@@ -47,7 +46,8 @@ plot_tab <- tabPanel(
 value_tab <- tabPanel(
   "Value Sensitive Design",
   fluidPage(theme = bs_theme(primary = "#091F43", font_scale = NULL, bootswatch = "cerulean"),
-    p("Prompt: Envision your system in use by a single stakeholder. Now imagine 100 such individuals interacting with the system. Then 1,000 individuals. Then 100,00. What new interactions might emerge from widespread use? Find three synergistic benefits of widespread use and three potential breakdowns.")
+    h3("Prompt: Envision your system in use by a single stakeholder. Now imagine 100 such individuals interacting with the system. Then 1,000 individuals. Then 100,000. What new interactions might emerge from widespread use? Find three synergistic benefits of widespread use and three potential breakdowns."),
+    p("")
   )
 )
 

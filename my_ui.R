@@ -50,7 +50,12 @@ value_tab <- tabPanel(
   fluidPage(theme = bs_theme(primary = "#091F43", font_scale = NULL, bootswatch = "cerulean"),
     h3("Prompt: Envision your system in use by a single stakeholder. Now imagine 100 such individuals interacting with the system. Then 1,000 individuals. Then 100,000. What new 
        interactions might emerge from widespread use? Find three synergistic benefits of widespread use and three potential breakdowns."),
-    p("")
+    p("One benefit of widespread use of my system is that it would show a large population that global CO2 emissions are increasing, spreading awareness of our impact on the environment.
+      This could also lead more people to push for aggressive climate goals, as they see that their country is still emitting lots of carbon dioxide into the atmosphere and protest for regulations such as a carbon tax.
+      Finally, it would let these stakeholders compare different countries and look at the effects of their climate plans - countries with the greatest negative rate of change may have the most effective regulations.
+      On the other hand, widespread use can lead to misinterpretation & spreading of misinformation, as one could see that carbon emissions in the US have decreased in the past 20 years and believe that the US is effectively decreasing emissions, even though its transition to clean energy is going extremely slowly.
+      Also, with a large population of stakeholders using the product, some might see countries with increasing CO2 emissions and blame them for climate change, even when they have low CO2 emissions when compared to the rest of the world or less CO2 emissions per capita than other countries.
+      Finally, the information presented in the system is limited by not being able to compare countries on the same y-scale, which a small amount of involved stakeholders may want for more in-depth analysis.")
   )
 )
 
